@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import FinalPersonagem from "./components/FinalPersonagem/FinalPersonagem";
+import FinalEpisodio from "./components/FinalEpisodio/FinalEpisodio";
+import Header from "./components/Header/Header";
+import FinalLocation from "./components/FinalLocation/FinalLocation";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+export default function App(){
+
+  return(
+
+    <main>
+        <Header/>
+        <Router>
+          <Routes>
+            <Route path="/" element={<FinalPersonagem/>} />
+            <Route path="/episodios" element={<FinalEpisodio/>} />
+            <Route path="/localizacao" element={<FinalLocation/>} />
+          </Routes>
+        </Router>
+    </main>
+      
+    )
+    
 }
-
-export default App;

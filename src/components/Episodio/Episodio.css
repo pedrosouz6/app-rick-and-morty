@@ -1,0 +1,46 @@
+.episodio__card {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0px 0px 40px 0;
+}
+
+.ep__card{
+    width: 240px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px 1px  rgba(0, 0, 0, .2);
+}
+
+.ep__card header {
+    margin-bottom: 5px;
+}
+
+.ep__card header p{
+    font-weight: 400;
+}
+
+.ep__card .ep__content{
+    margin: 15px 0;
+}
+
+.ep__card .ep__content p {
+    margin-bottom: 5px;
+}
+
+.ep__card header p{
+    font-size: 14pt;
+}
+
+.ep__footer{
+    border-top: 1px solid black;
+    padding-top: 5px;
+    display: flex;
+    justify-content: end;
+}
+
+.ep__footer p{
+    font-size: 10pt;
+}
